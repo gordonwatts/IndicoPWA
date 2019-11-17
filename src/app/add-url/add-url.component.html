@@ -1,0 +1,6 @@
+<form [formGroup]="addMeetingURLForm" (ngSubmit)="onAddURL()">
+<div class="input-group">
+    Indico Meeting URL: <input class="input-group-field" type="url" value="" placeholder="https://indico..." formControlName="addURL">
+    <div class="input-group-button"><button mat-button>Lookup URL</button></div>
+</div>
+</form>
