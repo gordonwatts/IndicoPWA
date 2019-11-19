@@ -4,6 +4,7 @@ import { Router } from "@angular/router";
 import { AgendaService, MeetingNameCard } from '../indico/agenda.service';
 import { MatTableDataSource } from '@angular/material';
 import { Subscription } from 'rxjs/internal/Subscription';
+import { MeetingListService } from '../datastore/meeting-list.service';
 
 @Component({
   selector: 'app-add-url',
@@ -13,12 +14,13 @@ import { Subscription } from 'rxjs/internal/Subscription';
 export class AddURLComponent implements OnInit {
   addMeetingURLForm: FormGroup;
 
-  displayedColumns: string[] = ['title'];
+  displayedColumns: string[] = ['title', 'add'];
   meetings = new MatTableDataSource<MeetingNameCard>();
 
   constructor(private formBuilder: FormBuilder,
     private router: Router,
-    private agenda: AgendaService
+    private agenda: AgendaService,
+    private all_meetings: MeetingListService
     ) {
   }
 
@@ -34,6 +36,10 @@ export class AddURLComponent implements OnInit {
       .subscribe(r => this.meetings.data = r)
     //this.router.navigate(['']);
     // this.router.navigate(['search'], { queryParams: {query: this.addMeetingURLForm.get('meetingURL').value}});
+  }
+
+  onAddThisMeeting(url: string) {
+    this.all_meetings.add_meeting(url);
   }
 
 }
