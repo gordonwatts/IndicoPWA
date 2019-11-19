@@ -1,0 +1,111 @@
+{
+    "count": 1,
+    "additionalInfo": {},
+    "_type": "HTTPAPIResult",
+    "url": "https:\/\/indico.cern.ch\/export\/event\/799542.json",
+    "results": [
+        {
+            "folders": [
+                {
+                    "_type": "folder",
+                    "attachments": [
+                        {
+                            "_type": "attachment",
+                            "description": "",
+                            "content_type": "application\/pdf",
+                            "id": 3128939,
+                            "size": 78465,
+                            "modified_dt": "2019-08-23T06:48:28.255436+00:00",
+                            "title": "Hotels_VCES2019.pdf",
+                            "download_url": "https:\/\/indico.cern.ch\/event\/799542\/attachments\/1896439\/3128939\/Hotels_VCES2019.pdf",
+                            "filename": "Hotels_VCES2019.pdf",
+                            "is_protected": false,
+                            "type": "file"
+                        },
+                        {
+                            "_type": "attachment",
+                            "description": "",
+                            "content_type": "application\/pdf",
+                            "id": 3134386,
+                            "size": 2912081,
+                            "modified_dt": "2019-08-29T08:00:20.992576+00:00",
+                            "title": "vces2019_conference_final.pdf",
+                            "download_url": "https:\/\/indico.cern.ch\/event\/799542\/attachments\/1896439\/3134386\/vces2019_conference_final.pdf",
+                            "filename": "vces2019_conference_final.pdf",
+                            "is_protected": false,
+                            "type": "file"
+                        },
+                        {
+                            "_type": "attachment",
+                            "description": "",
+                            "content_type": "application\/pdf",
+                            "id": 3134388,
+                            "size": 1282441,
+                            "modified_dt": "2019-08-29T08:00:28.566594+00:00",
+                            "title": "vces2019_public lecture_final2.pdf",
+                            "download_url": "https:\/\/indico.cern.ch\/event\/799542\/attachments\/1896439\/3134388\/vces2019_public_lecture_final2.pdf",
+                            "filename": "vces2019_public_lecture_final2.pdf",
+                            "is_protected": false,
+                            "type": "file"
+                        }
+                    ],
+                    "title": null,
+                    "is_protected": false,
+                    "default_folder": true,
+                    "id": 1896439,
+                    "description": ""
+                }
+            ],
+            "startDate": {
+                "date": "2019-11-28",
+                "tz": "Europe\/Zurich",
+                "time": "00:30:00"
+            },
+            "_type": "Conference",
+            "hasAnyProtection": false,
+            "endDate": {
+                "date": "2019-11-29",
+                "tz": "Europe\/Zurich",
+                "time": "18:00:00"
+            },
+            "description": "<p>The 15th&nbsp;<em>Central European Seminar on Particle Physics and Quantum Field Theory<\/em>, November 28-29, 2019 at the&nbsp;TUtheSky Meeting Hall, Getreidemark 9, 1060 Vienna,&nbsp;<span style=\"color:#777777\">will be dedicated to the topic&nbsp;<\/span><\/p>\r\n\r\n<div><strong><em>Precision Physics at the LHC<\/em><\/strong><\/div>\r\n\r\n<p>The meeting is jointly organized by the Theoretical Physics Departments of the&nbsp;<a href=\"https:\/\/physik.univie.ac.at\/en\/\">University of Vienna<\/a>&nbsp;and&nbsp;<a href=\"http:\/\/www.tuwien.ac.at\/en\">TU Wien<\/a>, as well as by the&nbsp;<a href=\"http:\/\/www.hephy.at\/\">Institute of High Energy Physics<\/a>&nbsp;of the Austrian Academy of Sciences and supported by the Faculty of Physics of the University of Vienna, the FWF doctoral school&nbsp;<a href=\"http:\/\/www.dkpi.at\/\"><em>Particles and Interactions<\/em><\/a>&nbsp;(P28535-N27)&nbsp;and the EU COST-ACTION (CA 16201)&nbsp;<em><a href=\"https:\/\/particleface.eu\">Unravelling new physics at the LHC through precision<\/a><\/em>.<\/p>\r\n\r\n<p>The topic of this year's meeting focuses on precision calculations and phenomenology at Large Hadron Collider and includes fixed-order and resummed as well as effective theory cross section calculations, Monte-Carlo event generators and on phenomenology related to the Higgs boson, jets, heavy flavour as well as electroweak effects in the&nbsp;context of current and future LHC studies including proton-proton and heavy ion collisions.<\/p>\r\n\r\n<div>\r\n<p>The seminar series was created 2004 and is intended to provide stimulating interactions between leading researchers and promising junior physicists on dedicated research topics. A considerable number of junior scientists participate in the seminar series. We particularly invite junior participants, including advanced graduate students, post-doctoral fellows, and junior faculty to attend the meeting.&nbsp;<\/p>\r\n\r\n<p>The conference fee for regular participants is 50 EUR and is to be paid in cash at the registration desk.&nbsp;<\/p>\r\n\r\n<p>Presentations are by invitation only. A list of <strong>hotel suggestions<\/strong> can be found <a href=\"https:\/\/indico.cern.ch\/event\/799542\/attachments\/1896439\/3128939\/Hotels_VCES2019.pdf\">here.<\/a><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>\r\n\r\n<div><strong>Confirmed Invited Speakers include<\/strong><\/div>\r\n\r\n<div>\r\n<p>Thomas Becher<\/p>\r\n\r\n<p>Ansgar Denner<\/p>\r\n\r\n<p>Pietro Govoni<\/p>\r\n\r\n<p>Edmond Iancu<\/p>\r\n\r\n<p>Abideh Jafari<\/p>\r\n\r\n<p>Patrick Kirchgaesser<\/p>\r\n\r\n<p>Anna Kulesza<\/p>\r\n\r\n<p>Aleksi Kurkela<\/p>\r\n\r\n<p>Tuomas Lappi<\/p>\r\n\r\n<p>Bernhard Mistlberger<\/p>\r\n\r\n<p>Simone Marzani<\/p>\r\n\r\n<p>Joao Pires<\/p>\r\n\r\n<p>Klaus Rabbertz<\/p>\r\n\r\n<p>Daniel Samitz<\/p>\r\n\r\n<p>Steffen Schumann<\/p>\r\n\r\n<p>Zoltan Trocsanyi<\/p>\r\n\r\n<p>Sandro Uccirati<\/p>\r\n\r\n<p>Leonardo Vernazza<\/p>\r\n\r\n<p>Michael Weber<\/p>\r\n\r\n<p>Urs Wiedemann<\/p>\r\n\r\n<p>Dieter Zeppenfeld<\/p>\r\n\r\n<p><br \/>\r\n<strong>Public Lecture<\/strong><strong>&nbsp;(Nov 28 18:30 - 20:00; free entry to the lecture)<\/strong><\/p>\r\n\r\n<p>Subir Sarkar (University of Oxford)<em>:&nbsp;<\/em><em>Constructing the universe<\/em><\/p>\r\n\r\n<p><br \/>\r\n<strong>Junior Scientists<\/strong><\/p>\r\n\r\n<p>We invite applications from graduate students and post-doctoral fellows to submit applications for poster presentations. Successful applicants can receive financial support to participate; please indicate so when registering.<\/p>\r\n\r\n<p>For this year's seminar the EU COST-ACTION (CA 16201)&nbsp;<em><a href=\"https:\/\/particleface.eu\">Unravelling new physic at the LHC through precision<\/a><\/em><em> <\/em>kindly supports the seminar with a limited number of grants covering topics in Working Group 1 (Innovative tools, algorithms and methods for precision calculations and the deep quantum structure of Yang-Mills theories) and Working Group 2 (Phenomenology at the energy frontier with high-quality LHC data). Seminar participants interested in a COST support shall contact the organizers. The conference fee is waived by participants supported by COST. We particularly encourage applications from the networks\u2019 Inclusiveness Target Countries: Bosnia-Herzegovina, Bulgaria, Cyprus, Czech Republic, Estonia, Croatia, Hungary, Lithuania, Latvia, Luxembourg, Malta, Montenegro, Poland, Portugal, Romania, Slovenia, Slovakia, the former Yugoslav Republic of Macedonia, Republic of Serbia and Turkey. Applications (incl. CV, statement of research and publication list) should be sent by October 10, 2019.<\/p>\r\n\r\n<p><strong>Organizing Committee<\/strong><\/p>\r\n\r\n<p>Andre Hoang (University of Vienna)<br \/>\r\nSimon Pl\u00e4tzer (University of Vienna)<br \/>\r\nMassimiliano Procura (University of Vienna)<br \/>\r\nAnton Rebhan (TU Wien)<br \/>\r\nAdam Kardos (University of Debrecen)<\/p>\r\n\r\n<p>Contact:&nbsp;<a href=\"mailto:andrea.smith-stachowski@tuwien.ac.at\">andrea.smith-stachowski@tuwien.ac.at<\/a><\/p>\r\n\r\n<p>The meeting is supported by:<\/p>\r\n\r\n<p><img alt=\"\" src=\"https:\/\/indico.cern.ch\/event\/799542\/images\/23963-Logo_PARTICLEFACE.png\" style=\"height:121px; width:341px\" \/><img alt=\"\" src=\"https:\/\/indico.cern.ch\/event\/799542\/images\/25010-cost.png\" style=\"height:91px; width:221px\" \/><\/p>\r\n\r\n<p><img alt=\"\" src=\"https:\/\/indico.cern.ch\/event\/799542\/images\/23962-doktoratskolleg_dkpi_500px.png\" style=\"height:62px; width:353px\" \/><\/p>\r\n\r\n<p><img alt=\"\" src=\"https:\/\/indico.cern.ch\/event\/799542\/images\/23961-TU_logo-450x170.jpg\" style=\"height:105px; width:279px\" \/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt=\"\" src=\"https:\/\/indico.cern.ch\/event\/799542\/images\/23960-uni_logo-b52bc1dc617b2e562245c656857f1a0e.png\" style=\"height:108px; width:396px\" \/><\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n<\/div>",
+            "roomMapURL": null,
+            "creator": {
+                "affiliation": "University of Vienna (AT)",
+                "_type": "Avatar",
+                "last_name": "Platzer",
+                "emailHash": "ebd9b5f81ef875fb9ff5de9fa44d6811",
+                "_fossil": "conferenceChairMetadata",
+                "fullName": "Platzer, Simon",
+                "first_name": "Simon",
+                "id": "66974"
+            },
+            "material": [],
+            "visibility": {
+                "id": "",
+                "name": "Everywhere"
+            },
+            "roomFullname": "TUtheSky",
+            "references": [],
+            "address": "Getreidemarkt 9\n1060 Wien\nAustria",
+            "timezone": "Europe\/Zurich",
+            "creationDate": {
+                "date": "2019-02-15",
+                "tz": "Europe\/Zurich",
+                "time": "13:32:15.456453"
+            },
+            "id": "799542",
+            "category": "Conferences",
+            "room": "TUtheSky",
+            "title": "Vienna Central European Seminar 2019",
+            "url": "https:\/\/indico.cern.ch\/event\/799542\/",
+            "note": {},
+            "chairs": [],
+            "location": "TU Wien",
+            "_fossil": "conferenceMetadata",
+            "type": "conference",
+            "categoryId": 6725
+        }
+    ],
+    "ts": 1573991110
+}
