@@ -16,6 +16,6 @@ export class HomeComponent implements OnInit {
   constructor(private all_meetings: MeetingListService) { }
 
   ngOnInit() {
-    this.all_meetings.get_list().then(r => this.meetings.data = r);
+    this.meetings.data = this.all_meetings.get_list();
   }
 }
