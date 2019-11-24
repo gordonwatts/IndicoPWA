@@ -23,6 +23,9 @@ export class MeetingListService {
     localStorage.setItem('meeting_list', JSON.stringify(meeting_list));
   }
 
+  // TODO: this should be done on setting, not on reading back.
+  // Would be nice to be able to do this only during adds rather than all
+  // the time - if the list is really long this might take a while!
   private clean_list(m_list: MeetingNameCard[]) : MeetingNameCard[] {
     let r = new Map<string, MeetingNameCard>();
     m_list.forEach(m => {
