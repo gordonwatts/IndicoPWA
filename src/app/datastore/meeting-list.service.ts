@@ -14,25 +14,31 @@ export class MeetingListService {
   //       Is there anything that will automatically lint?
   constructor() { }
 
-  private get_meeting_list() {
+  private get_meeting_list(): MeetingNameCard[] {
     let s = localStorage.getItem('meeting_list');
-    return (s === null || s === "{}") ? new Set<MeetingNameCard>() : new Set<MeetingNameCard>(JSON.parse(s));
+    return (s === null || s === "{}") ? [] : this.clean_list(JSON.parse(s));
   }
 
-  private set_meeting_list(meeting_list : Set<MeetingNameCard>) {
-    localStorage.setItem('meeting_list', JSON.stringify([...meeting_list]));
+  private set_meeting_list(meeting_list : MeetingNameCard[]) {
+    localStorage.setItem('meeting_list', JSON.stringify(meeting_list));
+  }
+
+  private clean_list(m_list: MeetingNameCard[]) : MeetingNameCard[] {
+    let r = new Map<string, MeetingNameCard>();
+    m_list.forEach(m => {
+         r.set(m.indico_url, m);
+    });
+    return Array.from(r.values());
   }
 
   public add_meeting(m_card: MeetingNameCard) {
-    let all_meetings = this.get_meeting_list()
-    all_meetings.add(m_card);
+    let all_meetings = this.get_meeting_list();
+    all_meetings.push(m_card);
     this.set_meeting_list(all_meetings)
-    console.log(all_meetings.size);
   }
 
   public get_list() : MeetingNameCard[]
   {
-    let l = this.get_meeting_list()
-    return [...l];
+    return this.get_meeting_list();
   }
 }
