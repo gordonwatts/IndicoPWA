@@ -13,7 +13,7 @@
     </ng-container>
     <ng-container matColumnDef="add">
       <th mat-header-cell *matHeaderCellDef>Add</th>
-      <td mat-cell *matCellDef="let meeting"><button mat-flat-button (click)="onAddThisMeeting(meeting.indico_url)"
+      <td mat-cell *matCellDef="let meeting"><button mat-flat-button (click)="onAddThisMeeting(meeting)"
           color="accent">
           <mat-icon>add</mat-icon>
         </button></td>

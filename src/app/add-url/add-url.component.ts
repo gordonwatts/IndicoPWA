@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from "@angular/router";
 import { AgendaService, MeetingNameCard } from '../indico/agenda.service';
 import { MatTableDataSource } from '@angular/material';
-import { Subscription } from 'rxjs/internal/Subscription';
 import { MeetingListService } from '../datastore/meeting-list.service';
 
 @Component({
@@ -38,8 +37,8 @@ export class AddURLComponent implements OnInit {
     // this.router.navigate(['search'], { queryParams: {query: this.addMeetingURLForm.get('meetingURL').value}});
   }
 
-  onAddThisMeeting(url: string) {
-    this.all_meetings.add_meeting(url);
+  onAddThisMeeting(card: MeetingNameCard) {
+    this.all_meetings.add_meeting(card);
   }
 
 }
