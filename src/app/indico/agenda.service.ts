@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { map } from 'rxjs/operators'
 import { Url } from 'url';
+import { Observable } from 'rxjs';
 
 interface RawIndicoMeeting {
   id: number;
@@ -41,11 +42,9 @@ export class AgendaService {
     }]
   }
 
-  public getNameCard(indico_event) {
-    let url = 'https://indico.cern.ch/export/event/799542.json'
-    // return this.http.request('GET', url)
-    //   .map(res => res.json())
-    let j = this.http.get(url)
+  public getNameCard(indico_url: string) : Observable<MeetingNameCard[]> {
+    // 'https://indico.cern.ch/export/event/799542.json
+    let j = this.http.get(indico_url)
       .pipe(map((res: IndicoExportMeetingResponse) => this.parseEventCard(res)))
     return j
   }
