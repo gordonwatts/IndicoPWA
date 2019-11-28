@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { MeetingId, MeetingListService } from '../datastore/meeting-list.service';
+import { MeetingListService } from '../datastore/meeting-list.service';
 import { Subscription } from 'rxjs';
+import { MeetingNameCard } from '../indico/agenda.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit {
 
   displayedColumns: string[] = ['url'];
-  meetings = new MatTableDataSource<MeetingId>();
+  meetings = new MatTableDataSource<MeetingNameCard>();
 
   constructor(private all_meetings: MeetingListService) { }
 

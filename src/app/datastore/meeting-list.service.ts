@@ -29,7 +29,7 @@ export class MeetingListService {
   private clean_list(m_list: MeetingNameCard[]) : MeetingNameCard[] {
     let r = new Map<string, MeetingNameCard>();
     m_list.forEach(m => {
-         r.set(m.indico_url, m);
+         r.set(`${m.indico_url.stub}${m.indico_url.event_id}`, m);
     });
     return Array.from(r.values());
   }

@@ -1,8 +1,20 @@
 import { Injectable } from '@angular/core';
+import { ConstantPool } from '@angular/compiler';
+
+export interface ParsedMeetingURL {
+  // Contains the info for the meeting
+
+  // The stub where indico is located - http://indico.cern.ch, for example.
+  stub: string;
+
+  // event number
+  event_id: string;
+}
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class UrlCleaningService {
 
   constructor() { }
@@ -13,7 +25,7 @@ export class UrlCleaningService {
   // x,y, and z might be sub-directories. And z could be export. Everything after
   // blah doesn't matter.
   // If we can't figure out the url then we return it.
-  public get_canonical_url(url_string: string) : string {
+  public get_canonical_url(url_string: string) : ParsedMeetingURL {
     let url = new URL(url_string);
 
     // Find the 'event' string to figure out where we are looking.
@@ -22,7 +34,7 @@ export class UrlCleaningService {
 
     let event_index = path_components.indexOf('event');
     if (event_index < 0) {
-      return url_string;
+      return null;
     }
 
     // If the previous guy is "export", then we drop that.
@@ -43,9 +55,21 @@ export class UrlCleaningService {
       path_components[path_components.length-1] = event_id.substring(0, dot_index);
     }
 
-    // And restore it.
-    url.pathname = path_components.join('/');
-
-    return url.toString();
+    // Build the result
+    event_id = path_components[path_components.length-1];
+    path_components = path_components.splice(0, path_components.length-2);
+    if (path_components.length == 0) {
+      url.pathname = '';
+    } else {
+      url.pathname = path_components.join('/');
+    }
+    let url_path = url.toString();
+    if (url_path[url_path.length-1] == '/') {
+      url_path = url_path.substring(0, url_path.length-1);
+    }
+    return {
+      stub: url_path,
+      event_id: event_id
+    };
   }
 }
